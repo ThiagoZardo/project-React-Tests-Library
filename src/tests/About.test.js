@@ -22,7 +22,7 @@ describe('2. Teste o componente <About.js />.', () => {
   });
 
   it('Verifica se a página contém a seguinte a imagem de uma Pokédex', () => {
-  // Consultei stackoverflow para pegar a img pela url.
+  // Consultei stackoverflow para pegar a img pela src.
   // https://stackoverflow.com/questions/60509527/jestreact-native-testing-library-how-to-test-an-image-src#:~:text=Voc%C3%AA%20tamb%C3%A9m%20pode,%C3%A0s%2019%3A43
 
     render(<About />);
