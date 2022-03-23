@@ -29,12 +29,10 @@ describe('1. Teste o componente <App.js />', () => {
   it('Redirecionada para a página de About pelo link About.', () => {
     const { history } = renderWithRouter(<App />);
     const pageAbout = screen.getByRole('link', { name: /About/i });
-    console.log(history.location.pathname);
     userEvent.click(pageAbout);
     const titleAbout = screen.getByRole('heading',
       { name: /About Pokédex/i, level: 2 });
     const { pathname } = history.location;
-    console.log(history.location.pathname);
     expect(titleAbout).toBeInTheDocument();
     expect(pathname).toBe('/about');
   });
